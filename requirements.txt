@@ -1,0 +1,8 @@
+Adafruit_DHT
+apscheduler
+bokeh
+flask
+pandas
+
+
+

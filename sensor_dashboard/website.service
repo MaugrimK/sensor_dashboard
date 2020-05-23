@@ -1,0 +1,13 @@
+[Unit]
+Description=Proofing box web application
+After=network.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/dev/sensor_dashboard
+Environment=PYTHONPATH=/home/pi/dev/sensor_dashboard
+ExecStart=/home/pi/dev/env/bin/python /home/pi/dev/sensor_dashboard/sensor_dashboard/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
